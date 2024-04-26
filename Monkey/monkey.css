@@ -1,0 +1,32 @@
+.grid {
+	width: 606px;
+	height: 606px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.square {
+	height: 200px;
+	width: 200px;
+	border: solid black 1px;
+}
+
+.monkey {
+	background-image: url("monkey.png");
+	background-size: cover;
+}
+
+.return-button {
+	position: absolute;
+	bottom: 220px;
+	right: 520px;
+	padding: 50px 80px;
+	background-image: url('return.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	border: none;
+	color: red;
+	text-decoration: none;
+	font-size: 25px;
+	cursor: pointer;
+}

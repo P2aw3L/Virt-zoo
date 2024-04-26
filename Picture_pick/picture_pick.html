@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+	<meta charset=utf-8>
+	<title> Memory Game</title>
+	<link rel="stylesheet" href="css/matchgame.css" />
+
+</head>
+
+<body>
+	<header>
+		<h1>Memory Game - how to play</h1>
+		<div>
+			<h3>
+				<p> A> Click on each image to reveal it. 
+				<p> B> For each image, there's a duplicate of the same. As you click on the duplicate, both will vanish. Goal is to match all images in the lowest possible time.</p>
+				<p> C> Once you start the game you have to finish it, and refresh the page, to get the time counter back to zero again.</p>
+			</h3>
+		</div>
+	</header>
+
+	<a href="../Crossroads/crossroads.html" class="return-button">Back to Crossroads</a>
+
+	<div id="timer">
+		Elapsed time: <span id="elapsed-time">00:00</span>
+	</div>
+	<section id="game">
+		<div id="cards">
+			<div class="card">
+				<div class="face front"></div>
+				<div class="face back"></div>
+			</div>
+			
+		</div>		
+	</section>	
+
+	<section id="popup" class="hide">
+		<div id="popup-bg">
+		</div>
+		<div id="popup-box">
+			<div class="ribbon hide">
+				<div class="ribbon-body">
+					<span>New Record</span>
+				</div>
+				<div class="triangle"></div>
+			</div>
+			<div id="popup-box-content">
+				<h1>You Won!</h1>
+				<p>Your Score:</p>
+				<p><span class='score'>13</span></p>
+				<p>
+					<small>Last Score: <span class='last-score'>0</span><br>
+            Saved on: <span class='saved-time'></span>
+          </small>
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<audio id="audioEngine">
+	  <source src="mp3/yay.mp3" type="audio/mpeg">
+	Your browser does not support the audio element.
+	</audio>
+
+	<script src="js/jquery-2.2.3.min.js"></script>>
+	<script src="js/prefixfree.min.js"></script>
+	<script src="js/matchgame.js"></script>
+</body>
+
+</html>
